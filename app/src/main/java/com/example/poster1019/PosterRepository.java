@@ -123,41 +123,60 @@ public class PosterRepository {
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 
-        Posters the100 = new Posters();
-        the100.id = "vietnam";
-        the100.image = R.drawable.poster3;
-        the100.name = "Vietnam Movie";
-        the100.rating = 5f;
-        the100.createdBy = "Cuong Ngo";
-        the100.story = "This is an Vietnam Movie with a young lady";
-        posters.add(the100);
+        Posters happiestSeason = new Posters();
+        happiestSeason.id = "happiest";
+        happiestSeason.image = R.drawable.poster1;
+        happiestSeason.name = "The Happiest Season";
+        happiestSeason.rating = 5f;
+        happiestSeason.createdBy = "Clea DuVall";
+        happiestSeason.story = "A Christmas Comedy about a lesbian couple";
+        posters.add(happiestSeason);
 
-        Posters chineseMovie = new Posters();
-        chineseMovie.id = "chinese";
-        chineseMovie.image = R.drawable.poster4;
-        chineseMovie.name = "Chinese Movie";
-        chineseMovie.rating = 4f;
-        chineseMovie.createdBy = "Zhang San";
-        chineseMovie.story = "This is an Chinese Movie with a young lady.";
-        posters.add(chineseMovie);
+        Posters homeAlone = new Posters();
+        homeAlone.id = "homeAlone";
+        homeAlone.image = R.drawable.poster2;
+        homeAlone.name = "HomeAlone";
+        homeAlone.rating = 4f;
+        homeAlone.createdBy = "John Hughes";
+        homeAlone.story = "An eight-year-old is forgotten by his family on Christmas.";
+        posters.add(homeAlone);
 
-        Posters japanMovie = new Posters();
-        japanMovie.id = "japanese";
-        japanMovie.image = R.drawable.poster1;
-        japanMovie.name = "Japanese Movie";
-        japanMovie.rating = 3f;
-        japanMovie.createdBy = "Juzo Itami";
-        japanMovie.story = "This is an Japanese Movie.";
-        posters.add(japanMovie);
+        Posters elf = new Posters();
+        elf.id = "elf";
+        elf.image = R.drawable.poster3;
+        elf.name = "Elf";
+        elf.rating = 3f;
+        elf.createdBy = "Jon Favreau";
+        elf.story = "A human raised by elves travels to New York to meet his biological father.";
+        posters.add(elf);
 
-        Posters americanMovie = new Posters();
-        americanMovie.id = "american";
-        americanMovie.image = R.drawable.poster2;
-        americanMovie.name = "American Movie";
-        americanMovie.rating = 5f;
-        americanMovie.createdBy = "Tim Burton";
-        americanMovie.story = "This is an American Movie.";
-        posters.add(americanMovie);
+        Posters grinch = new Posters();
+        grinch.id = "grinch";
+        grinch.image = R.drawable.poster4;
+        grinch.name = "How the Grinch Stole Christmas";
+        grinch.rating = 5f;
+        grinch.createdBy = "Ron Howard";
+        grinch.story = "A reclusive Grinch tries to steal Christmas.";
+        posters.add(grinch);
+
+        Posters santa = new Posters();
+        santa.id = "santa";
+        santa.image = R.drawable.poster5;
+        santa.name = "The Santa Clause";
+        santa.rating = 5f;
+        santa.createdBy = "John Pasquin";
+        santa.story = "Scott accidentally causes Santa Clause to fall off a roof and now most take his place.";
+        posters.add(santa);
+
+
+        Posters nightmareBefore = new Posters();
+        nightmareBefore.id = "nightmareBefore";
+        nightmareBefore.image = R.drawable.poster6;
+        nightmareBefore.name = "The Nightmare Before Christmas";
+        nightmareBefore.rating = 5f;
+        nightmareBefore.createdBy = "Tim Burton";
+        nightmareBefore.story = "The pumpkin king wants to see what its like to be Santa Clause.";
+
 
         return posters;
 
