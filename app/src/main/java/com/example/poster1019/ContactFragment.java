@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,14 +29,27 @@ public class ContactFragment extends Fragment {
                 openEmailApp(getString(R.string.contact_email));
             }
         });
+
+        //Changes the company description to personal intro when clicked
+        TextView companyIntro = view.findViewById(R.id.companyIntro);
+        Button personalIntro = view.findViewById(R.id.personalIntro);
+
+        personalIntro.setOnClickListener(v -> {
+            companyIntro.setText(
+                    "I'm a computer science student who enjoys technology." +
+                            "I am studying at Central Washington University at the Des Moines campus." +
+                            "This is my final year in school!"
+            );
+        });
     }
 
-    private void openEmailApp(String emailAddress){
-        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+emailAddress));
-        try {
-            startActivity(intent);
-        } catch (ActivityNotFoundException e) {
-            Toast.makeText(requireContext(),R.string.no_email_app,Toast.LENGTH_SHORT).show();
+
+            private void openEmailApp(String emailAddress) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + emailAddress));
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(requireContext(), R.string.no_email_app, Toast.LENGTH_SHORT).show();
+                }
+            }
         }
-    }
-}

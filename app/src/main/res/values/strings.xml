@@ -13,6 +13,7 @@
     <string name="navigation_drawer_close">Close menu</string>
 
     <string name="about_us">About us</string>
+    <string name="title_about">About Us</string>
     <string name="company_intro">MoviePoster is a small studio that builds simple, friendly apps for discovering films from around the world. We hand-pick posters and stories so you can quickly find, and save, your next favorite movie.</string>
     <string name="get_in_touch">Get in touch</string>
     <string name="contact_email">contact@movieposter.example</string>
@@ -31,5 +32,8 @@
     </plurals>
     <string name="favorites_empty">No favorites yet. Select posters on the main page and tap Add To Watchlist.</string>
     <string name="remove_favorite">Remove from favorites</string>
+    <string name="dj_oliver_and_marley">DJ, Oliver, and Marley</string>
+    <string name="meet_dj_oliver_amp_marley"><![CDATA[Meet DJ, Oliver, & Marley]]></string>
+    <string name="description">These three furry companions each have their own unique personalities. They spend most of their days snuggled up in kitty piles together watching their favorite movies.</string>
 
 </resources>
