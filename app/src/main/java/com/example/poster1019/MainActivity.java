@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.fragmentContainer, new PostersFragment(), TAG_PAGE_MAIN)
                     .add(R.id.fragmentContainer, new FavoritesFragment(), TAG_PAGE_FAVORITES)
                     .add(R.id.fragmentContainer, new ContactFragment(), TAG_PAGE_CONTACT)
-                    .add(R.id.fragmentContainer, new AboutFragment(), TAG_PAGE_ABOUT)
+                    .add(R.id.fragmentContainer, new AboutFragment(), TAG_PAGE_ABOUT) //Added about page
                     .commitNow();
         } else {
             currentPageId = savedInstanceState.getInt(KEY_CURRENT_PAGE, R.id.nav_main);
@@ -170,7 +170,6 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView.setCheckedItem(pageId);
         bottomNavigation.getMenu().findItem(pageId).setChecked(true);
-
         drawerLayout.closeDrawer(GravityCompat.START);
 
     }
@@ -182,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (pageId == R.id.nav_contact) {
             return R.string.title_contact;
         } else if (pageId == R.id.nav_about){
-            return R.string.title_about; //Added about page
+            return R.string.title_about; //Added About page
         }
         return R.string.posters;
     }

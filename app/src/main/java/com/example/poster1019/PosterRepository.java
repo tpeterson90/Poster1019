@@ -176,6 +176,8 @@ public class PosterRepository {
         nightmareBefore.rating = 5f;
         nightmareBefore.createdBy = "Tim Burton";
         nightmareBefore.story = "The pumpkin king wants to see what its like to be Santa Clause.";
+        posters.add(nightmareBefore);
+
 
 
         return posters;
